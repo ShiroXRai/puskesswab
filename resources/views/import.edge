@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://cekhasilswab.puskesmassetiabudi.id/ -->
+<html lang="en" class="mdl-js" style="height: auto;">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    .swal-icon--error {
+      border-color: #f27474;
+      -webkit-animation: animateErrorIcon .5s;
+      animation: animateErrorIcon .5s
+    }
+
+    .swal-icon--error__x-mark {
+      position: relative;
+      display: block;
+      -webkit-animation: animateXMark .5s;
+      animation: animateXMark .5s
+    }
+
+    .swal-icon--error__line {
+      position: absolute;
+      height: 5px;
+      width: 47px;
+      background-color: #f27474;
+      display: block;
+      top: 37px;
+      border-radius: 2px
+    }
+
+    .swal-icon--error__line--left {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      left: 17px
+    }
+
+    .swal-icon--error__line--right {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      right: 16px
+    }
+
+    @-webkit-keyframes animateErrorIcon {
+      0% {
+        -webkit-transform: rotateX(100deg);
+        transform: rotateX(100deg);
+        opacity: 0
+      }
+
+      to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1
+      }
+    }
+
+    @keyframes animateErrorIcon {
+      0% {
+        -webkit-transform: rotateX(100deg);
+        transform: rotateX(100deg);
+        opacity: 0
+      }
+
+      to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes animateXMark {
+      0% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+      }
+
+      50% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+      }
+
+      80% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        margin-top: -6px
+      }
+
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        margin-top: 0;
+        opacity: 1
+      }
+    }
+
+    @keyframes animateXMark {
+      0% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+      }
+
+      50% {
+        -webkit-transform: scale(.4);
+        transform: scale(.4);
+        margin-top: 26px;
+        opacity: 0
+      }
+
+      80% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        margin-top: -6px
+      }
+
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        margin-top: 0;
+        opacity: 1
+      }
+    }
+
+    .swal-icon--warning {
+      border-color: #f8bb86;
+      -webkit-animation: pulseWarning .75s infinite alternate;
+      animation: pulseWarning .75s infinite alternate
+    }
+
+    .swal-icon--warning__body {
+      width: 5px;
+      height: 47px;
+      top: 10px;
+      border-radius: 2px;
+      margin-left: -2px
+    }
+
+    .swal-icon--warning__body,
+    .swal-icon--warning__dot {
+      position: absolute;
+      left: 50%;
+      background-color: #f8bb86
+    }
+
+    .swal-icon--warning__dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin-left: -4px;
+      bottom: -11px
+    }
+
+    @-webkit-keyframes pulseWarning {
+      0% {
+        border-color: #f8d486
+      }
+
+      to {
+        border-color: #f8bb86
+      }
+    }
+
+    @keyframes pulseWarning {
+      0% {
+        border-color: #f8d486
+      }
+
+      to {
+        border-color: #f8bb86
+      }
+    }
+
+    .swal-icon--success {
+      border-color: #a5dc86
+    }
+
+    .swal-icon--success:after,
+    .swal-icon--success:before {
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 60px;
+      height: 120px;
+      background: #fff;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg)
+    }
+
+    .swal-icon--success:before {
+      border-radius: 120px 0 0 120px;
+      top: -7px;
+      left: -33px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 60px 60px;
+      transform-origin: 60px 60px
+    }
+
+    .swal-icon--success:after {
+      border-radius: 0 120px 120px 0;
+      top: -11px;
+      left: 30px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 0 60px;
+      transform-origin: 0 60px;
+      -webkit-animation: rotatePlaceholder 4.25s ease-in;
+      animation: rotatePlaceholder 4.25s ease-in
+    }
+
+    .swal-icon--success__ring {
+      width: 80px;
+      height: 80px;
+      border: 4px solid hsla(98, 55%, 69%, .2);
+      border-radius: 50%;
+      box-sizing: content-box;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      z-index: 2
+    }
+
+    .swal-icon--success__hide-corners {
+      width: 5px;
+      height: 90px;
+      background-color: #fff;
+      position: absolute;
+      left: 28px;
+      top: 8px;
+      z-index: 1;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+    }
+
+    .swal-icon--success__line {
+      height: 5px;
+      background-color: #a5dc86;
+      display: block;
+      border-radius: 2px;
+      position: absolute;
+      z-index: 2
+    }
+
+    .swal-icon--success__line--tip {
+      width: 25px;
+      left: 14px;
+      top: 46px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-animation: animateSuccessTip .75s;
+      animation: animateSuccessTip .75s
+    }
+
+    .swal-icon--success__line--long {
+      width: 47px;
+      right: 8px;
+      top: 38px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: animateSuccessLong .75s;
+      animation: animateSuccessLong .75s
+    }
+
+    @-webkit-keyframes rotatePlaceholder {
+      0% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+      }
+
+      5% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+      }
+
+      12% {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+      }
+
+      to {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+      }
+    }
+
+    @keyframes rotatePlaceholder {
+      0% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+      }
+
+      5% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+      }
+
+      12% {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+      }
+
+      to {
+        -webkit-transform: rotate(-405deg);
+        transform: rotate(-405deg)
+      }
+    }
+
+    @-webkit-keyframes animateSuccessTip {
+      0% {
+        width: 0;
+        left: 1px;
+        top: 19px
+      }
+
+      54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+      }
+
+      70% {
+        width: 50px;
+        left: -8px;
+        top: 37px
+      }
+
+      84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+      }
+
+      to {
+        width: 25px;
+        left: 14px;
+        top: 45px
+      }
+    }
+
+    @keyframes animateSuccessTip {
+      0% {
+        width: 0;
+        left: 1px;
+        top: 19px
+      }
+
+      54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+      }
+
+      70% {
+        width: 50px;
+        left: -8px;
+        top: 37px
+      }
+
+      84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+      }
+
+      to {
+        width: 25px;
+        left: 14px;
+        top: 45px
+      }
+    }
+
+    @-webkit-keyframes animateSuccessLong {
+      0% {
+        width: 0;
+        right: 46px;
+        top: 54px
+      }
+
+      65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+      }
+
+      84% {
+        width: 55px;
+        right: 0;
+        top: 35px
+      }
+
+      to {
+        width: 47px;
+        right: 8px;
+        top: 38px
+      }
+    }
+
+    @keyframes animateSuccessLong {
+      0% {
+        width: 0;
+        right: 46px;
+        top: 54px
+      }
+
+      65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+      }
+
+      84% {
+        width: 55px;
+        right: 0;
+        top: 35px
+      }
+
+      to {
+        width: 47px;
+        right: 8px;
+        top: 38px
+      }
+    }
+
+    .swal-icon--info {
+      border-color: #c9dae1
+    }
+
+    .swal-icon--info:before {
+      width: 5px;
+      height: 29px;
+      bottom: 17px;
+      border-radius: 2px;
+      margin-left: -2px
+    }
+
+    .swal-icon--info:after,
+    .swal-icon--info:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      background-color: #c9dae1
+    }
+
+    .swal-icon--info:after {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin-left: -3px;
+      top: 19px
+    }
+
+    .swal-icon {
+      width: 80px;
+      height: 80px;
+      border-width: 4px;
+      border-style: solid;
+      border-radius: 50%;
+      padding: 0;
+      position: relative;
+      box-sizing: content-box;
+      margin: 20px auto
+    }
+
+    .swal-icon:first-child {
+      margin-top: 32px
+    }
+
+    .swal-icon--custom {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      border: none;
+      border-radius: 0
+    }
+
+    .swal-icon img {
+      max-width: 100%;
+      max-height: 100%
+    }
+
+    .swal-title {
+      color: rgba(0, 0, 0, .65);
+      font-weight: 600;
+      text-transform: none;
+      position: relative;
+      display: block;
+      padding: 13px 16px;
+      font-size: 27px;
+      line-height: normal;
+      text-align: center;
+      margin-bottom: 0
+    }
+
+    .swal-title:first-child {
+      margin-top: 26px
+    }
+
+    .swal-title:not(:first-child) {
+      padding-bottom: 0
+    }
+
+    .swal-title:not(:last-child) {
+      margin-bottom: 13px
+    }
+
+    .swal-text {
+      font-size: 16px;
+      position: relative;
+      float: none;
+      line-height: normal;
+      vertical-align: top;
+      text-align: left;
+      display: inline-block;
+      margin: 0;
+      padding: 0 10px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, .64);
+      max-width: calc(100% - 20px);
+      overflow-wrap: break-word;
+      box-sizing: border-box
+    }
+
+    .swal-text:first-child {
+      margin-top: 45px
+    }
+
+    .swal-text:last-child {
+      margin-bottom: 45px
+    }
+
+    .swal-footer {
+      text-align: right;
+      padding-top: 13px;
+      margin-top: 13px;
+      padding: 13px 16px;
+      border-radius: inherit;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0
+    }
+
+    .swal-button-container {
+      margin: 5px;
+      display: inline-block;
+      position: relative
+    }
+
+    .swal-button {
+      background-color: #7cd1f9;
+      color: #fff;
+      border: none;
+      box-shadow: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 24px;
+      margin: 0;
+      cursor: pointer
+    }
+
+    .swal-button:active {
+      background-color: #70bce0
+    }
+
+    .swal-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+    }
+
+    .swal-button[disabled] {
+      opacity: .5;
+      cursor: default
+    }
+
+    .swal-button::-moz-focus-inner {
+      border: 0
+    }
+
+    .swal-button--cancel {
+      color: #555;
+      background-color: #efefef
+    }
+
+    .swal-button--cancel:active {
+      background-color: #d7d7d7
+    }
+
+    .swal-button--cancel:focus {
+      box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+    }
+
+    .swal-button--danger {
+      background-color: #e64942
+    }
+
+    .swal-button--danger:active {
+      background-color: #cf423b
+    }
+
+    .swal-button--danger:focus {
+      box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+    }
+
+    .swal-content {
+      padding: 0 20px;
+      margin-top: 20px;
+      font-size: medium
+    }
+
+    .swal-content:last-child {
+      margin-bottom: 20px
+    }
+
+    .swal-content__input,
+    .swal-content__textarea {
+      -webkit-appearance: none;
+      background-color: #fff;
+      border: none;
+      font-size: 14px;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, .14);
+      padding: 10px 13px;
+      border-radius: 2px;
+      transition: border-color .2s
+    }
+
+    .swal-content__input:focus,
+    .swal-content__textarea:focus {
+      outline: none;
+      border-color: #6db8ff
+    }
+
+    .swal-content__textarea {
+      resize: vertical
+    }
+
+    .swal-button--loading {
+      color: transparent
+    }
+
+    .swal-button--loading~.swal-button__loader {
+      opacity: 1
+    }
+
+    .swal-button__loader {
+      position: absolute;
+      height: auto;
+      width: 43px;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      pointer-events: none;
+      opacity: 0
+    }
+
+    .swal-button__loader div {
+      display: inline-block;
+      float: none;
+      vertical-align: baseline;
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      border: none;
+      margin: 2px;
+      opacity: .4;
+      border-radius: 7px;
+      background-color: hsla(0, 0%, 100%, .9);
+      transition: background .2s;
+      -webkit-animation: swal-loading-anim 1s infinite;
+      animation: swal-loading-anim 1s infinite
+    }
+
+    .swal-button__loader div:nth-child(3n+2) {
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s
+    }
+
+    .swal-button__loader div:nth-child(3n+3) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+    }
+
+    @-webkit-keyframes swal-loading-anim {
+      0% {
+        opacity: .4
+      }
+
+      20% {
+        opacity: .4
+      }
+
+      50% {
+        opacity: 1
+      }
+
+      to {
+        opacity: .4
+      }
+    }
+
+    @keyframes swal-loading-anim {
+      0% {
+        opacity: .4
+      }
+
+      20% {
+        opacity: .4
+      }
+
+      50% {
+        opacity: 1
+      }
+
+      to {
+        opacity: .4
+      }
+    }
+
+    .swal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0;
+      overflow-y: scroll;
+      background-color: rgba(0, 0, 0, .4);
+      z-index: 10000;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .swal-overlay:before {
+      content: " ";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%
+    }
+
+    .swal-overlay--show-modal {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .swal-overlay--show-modal .swal-modal {
+      opacity: 1;
+      pointer-events: auto;
+      box-sizing: border-box;
+      -webkit-animation: showSweetAlert .3s;
+      animation: showSweetAlert .3s;
+      will-change: transform
+    }
+
+    .swal-modal {
+      width: 478px;
+      opacity: 0;
+      pointer-events: none;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      position: static;
+      margin: 20px auto;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      z-index: 10001;
+      transition: opacity .2s, -webkit-transform .3s;
+      transition: transform .3s, opacity .2s;
+      transition: transform .3s, opacity .2s, -webkit-transform .3s
+    }
+
+    @media (max-width:500px) {
+      .swal-modal {
+        width: calc(100% - 20px)
+      }
+    }
+
+    @-webkit-keyframes showSweetAlert {
+      0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+      }
+
+      1% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+      }
+
+      45% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+      }
+
+      80% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95)
+      }
+
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+      }
+    }
+
+    @keyframes showSweetAlert {
+      0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+      }
+
+      1% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+      }
+
+      45% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+      }
+
+      80% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95)
+      }
+
+      to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+      }
+    }
+  </style>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Site Title -->
+  <title>Puskesmas Kecamatan Jatinegara</title>
+  <!-- Meta Description Tag -->
+
+  <!-- Favicon Icon -->
+  <link href="/font/css/all.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon"
+    href="https://puskesmasjatinegara.com/assets/upload/image/thumbs/logo_cetar_copy.png">
+  <!-- Font Awesoeme Stylesheet CSS -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/font-awesome.min.css">
+  <!-- Google web Font -->
+  <link rel="stylesheet" type="text/css" href="/style1.cs">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/bootstrap.min.cs">
+  <!-- Material Design Lite Stylesheet CSS -->
+  <link rel="stylesheet" href="/material.min.cs">
+  <!-- Material Design Select Field Stylesheet CSS -->
+  <link rel="stylesheet" href="/mdl-selectfield.min.cs">
+  <!-- Owl Carousel Stylesheet CSS -->
+  <link rel="stylesheet" href="/owl.carousel.min.cs">
+  <!-- Animate Stylesheet CSS -->
+  <link rel="stylesheet" href="/animate.min.cs">
+  <!-- Magnific Popup Stylesheet CSS -->
+  <link rel="stylesheet" href="/magnific-popup.cs">
+  <!-- Flex Slider Stylesheet CSS -->
+  <link rel="stylesheet" href="/fexslider.cs">
+  <!-- Custom Main Stylesheet CSS -->
+  <link rel="stylesheet" href="/style-green.cs">
+
+
+  <style type="text/css">
+    .parallax-background-1 {
+      background-image: url('https://puskesmasjatinegara.com/assets/upload/image/thumbs/logo_cetar_copy.png');
+    }
+
+    .page-ttl {
+
+      background-image: url('https://puskesmasjatinegara.com/assets/upload/image/thumbs/logo_cetar_copy.png');
+    }
+  </style>
+  <meta name="shimejiBrowserExtensionId" content="gohjpllcolmccldfdggmamodembldgpc" data-version="1.6.5">
+  <style type="text/css">
+    /*!
+ * jQuery contextMenu - Plugin for simple contextMenu handling
+ *
+ * Version: v2.5.0
+ *
+ * Authors: Björn Brala (SWIS.nl), Rodney Rehm, Addy Osmani (patches for FF)
+ * Web: http://swisnl.github.io/jQuery-contextMenu/
+ *
+ * Copyright (c) 2011-2017 SWIS BV and contributors
+ *
+ * Licensed under
+ *   MIT License http://www.opensource.org/licenses/mit-license
+ *
+ * Date: 2017-05-25T11:30:28.663Z
+ */
+    @-webkit-keyframes cm-spin {
+      0% {
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: translateY(-50%) rotate(359deg);
+        transform: translateY(-50%) rotate(359deg);
+      }
+    }
+
+    @-o-keyframes cm-spin {
+      0% {
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: translateY(-50%) rotate(359deg);
+        -o-transform: translateY(-50%) rotate(359deg);
+        transform: translateY(-50%) rotate(359deg);
+      }
+    }
+
+    @keyframes cm-spin {
+      0% {
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: translateY(-50%) rotate(359deg);
+        -o-transform: translateY(-50%) rotate(359deg);
+        transform: translateY(-50%) rotate(359deg);
+      }
+    }
+
+    @font-face {
+      font-family: "context-menu-icons";
+      font-style: normal;
+      font-weight: normal;
+
+      src: url("font/context-menu-icons.eot?4yg1f");
+      src: url("font/context-menu-icons.eot?4yg1f#iefix") format("embedded-opentype"), url("font/context-menu-icons.woff2?4yg1f") format("woff2"), url("font/context-menu-icons.woff?4yg1f") format("woff"), url("font/context-menu-icons.ttf?4yg1f") format("truetype");
+    }
+
+    .context-menu-icon-add:before {
+      content: "EA01";
+    }
+
+    .context-menu-icon-copy:before {
+      content: "EA02";
+    }
+
+    .context-menu-icon-cut:before {
+      content: "EA03";
+    }
+
+    .context-menu-icon-delete:before {
+      content: "EA04";
+    }
+
+    .context-menu-icon-edit:before {
+      content: "EA05";
+    }
+
+    .context-menu-icon-loading:before {
+      content: "EA06";
+    }
+
+    .context-menu-icon-paste:before {
+      content: "EA07";
+    }
+
+    .context-menu-icon-quit:before {
+      content: "EA08";
+    }
+
+    .context-menu-icon::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2em;
+      font-family: "context-menu-icons";
+      font-size: 1em;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      color: #2980b9;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .context-menu-icon.context-menu-hover:before {
+      color: #fff;
+    }
+
+    .context-menu-icon.context-menu-disabled::before {
+      color: #bbb;
+    }
+
+    .context-menu-icon.context-menu-icon-loading:before {
+      -webkit-animation: cm-spin 2s infinite;
+      -o-animation: cm-spin 2s infinite;
+      animation: cm-spin 2s infinite;
+    }
+
+    .context-menu-icon.context-menu-icon--fa {
+      display: list-item;
+      font-family: inherit;
+    }
+
+    .context-menu-icon.context-menu-icon--fa::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 2em;
+      font-family: FontAwesome;
+      font-size: 1em;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      color: #2980b9;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .context-menu-icon.context-menu-icon--fa.context-menu-hover:before {
+      color: #fff;
+    }
+
+    .context-menu-icon.context-menu-icon--fa.context-menu-disabled::before {
+      color: #bbb;
+    }
+
+    .context-menu-list {
+      position: absolute;
+      display: inline-block;
+      min-width: 13em;
+      max-width: 26em;
+      padding: .25em 0;
+      margin: .3em;
+      font-family: inherit;
+      font-size: inherit;
+      list-style-type: none;
+      background: #fff;
+      border: 1px solid #bebebe;
+      border-radius: .2em;
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    }
+
+    .context-menu-item {
+      position: relative;
+      padding: .2em 2em;
+      color: #2f2f2f;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: #fff;
+    }
+
+    .context-menu-separator {
+      padding: 0;
+      margin: .35em 0;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .context-menu-item>label>input,
+    .context-menu-item>label>textarea {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+
+    .context-menu-item.context-menu-hover {
+      color: #fff;
+      cursor: pointer;
+      background-color: #2980b9;
+    }
+
+    .context-menu-item.context-menu-disabled {
+      color: #bbb;
+      cursor: default;
+      background-color: #fff;
+    }
+
+    .context-menu-input.context-menu-hover {
+      color: #2f2f2f;
+      cursor: default;
+    }
+
+    .context-menu-submenu:after {
+      position: absolute;
+      top: 50%;
+      right: .5em;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      content: '';
+      border-color: transparent transparent transparent #2f2f2f;
+      border-style: solid;
+      border-width: .25em 0 .25em .25em;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    /**
+ * Inputs
+ */
+    .context-menu-item.context-menu-input {
+      padding: .3em .6em;
+    }
+
+    /* vertically align inside labels */
+    .context-menu-input>label>* {
+      vertical-align: top;
+    }
+
+    /* position checkboxes and radios as icons */
+    .context-menu-input>label>input[type="checkbox"],
+    .context-menu-input>label>input[type="radio"] {
+      position: relative;
+      top: .12em;
+      margin-right: .4em;
+    }
+
+    .context-menu-input>label {
+      margin: 0;
+    }
+
+    .context-menu-input>label,
+    .context-menu-input>label>input[type="text"],
+    .context-menu-input>label>textarea,
+    .context-menu-input>label>select {
+      display: block;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .context-menu-input>label>textarea {
+      height: 7em;
+    }
+
+    .context-menu-item>.context-menu-list {
+      top: .3em;
+      /* re-positioned by js */
+      right: -.3em;
+      display: none;
+    }
+
+    .context-menu-item.context-menu-visible>.context-menu-list {
+      display: block;
+    }
+
+    .context-menu-accesskey {
+      text-decoration: underline;
+    }
+  </style>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Lato');
+
+    .context-menu-list {
+      font-family: 'Lato', sans-serif !important;
+      font-size: 14px;
+      text-align: left;
+      font-weight: normal;
+      width: 200px;
+    }
+
+    .context-menu-item {
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      text-align: left;
+    }
+
+    .contextmenu-item-custom.contextmenu-item-custom__accent:not(:hover) {
+      background-color: #f8ffeb;
+    }
+
+    .contextmenu-item-custom.contextmenu-item-custom__success:not(:hover) {
+      background-color: #eeffcd;
+    }
+  </style>
+</head>
+
+<body style="overflow: visible;">
+  <!-- Start Header -->
+  <!--   ============== PANGGIL KONTEN ============ -->
+
+  <header id="header-3" class="">
+    <div class="layer-stretch hdr-center">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <div class="hdr-center-logo">
+            <a href="https://www.puskesmasjatinegara.com/" class="d-inline-block"><img
+                style="  width: 100px;height: 93px;margin-left: 100px;margin-top: 10px;margin-bottom: 10px;"
+                src="https://puskesmasjatinegara.com/assets/upload/image/thumbs/logo_cetar_copy.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="hdr-center-submenu row pull-right" style="margin-right: 30px;">
+            <div class="col-md-auto mr-3 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+              <div class="tbl-cell" style="font-size: xx-large;">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="tbl-cell text-left p-0">
+                <p class="font-12 m-0 text-muted">Punya Pertanyaan ?</p>
+                <p class="font-14 m-0">puskesmasjatinegara@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-auto d-none d-sm-none d-md-block d-lg-block d-xl-block">
+              <div class="tbl-cell" style="font-size: xx-large;">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="tbl-cell text-left p-0">
+                <p class="font-12 m-0 text-muted">Telpon</p>
+                <a href="tel:+621-829-5529">
+                  <p class="font-14 m-0">081311725278</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </header><!-- End Header -->
+  <!-- ============== END PANGGIL KONTEN ========== -->
+  <!-- End Header -->
+
+  <!--   ============== PANGGIL KONTEN ============ -->
+
+  <!-- Start Page Title Section -->
+  <div class="page-ttl"
+    style="background: linear-gradient(-90deg, rgb(216 255 0 / 75%), rgb(218 151 29 / 75%)),url('https://puskesmasjatinegara.com/assets/upload/image/thumbs/logo_cetar_copy.png');text-align: center;color: white; height: 125px;background-repeat: no-repeat;background-size: cover;">
+    <div class="layer-stretch">
+      <div class="page-ttl-container">
+        <h1 style="padding-top: 22px;">Import Hasil Swab</h1>
+        <p><a href="https://cekhasilswab.puskesmassetiabudi.id/#">Home</a> → <span>Import Hasil Swab</span></p>
+      </div>
+    </div>
+  </div><!-- End Page Title Section -->
+  <!-- Start About First Section  -->
+  <div class="col-md-8 offset-md-2" style="      text-align: -webkit-center;  margin-top: 25px;">
+    <div class="theme-quote theme-quote-colored theme-quote-primary" style="border-color: #686868;background: #ff8800;text-align: center;width: 55rem;height: 4rem;margin-bottom: 23px;">
+      <p class=" font-14" style="    padding-top: 7px; ">Demi menjaga kerahasiaan data dan validitas hasil dalam website
+        ini, jika didapatkan
+        hasil PCR Positif maka anda akan langsung dihubungi oleh Tim Puskesmas Kecamatan Setiabudi.</p>
+      <!-- <footer class="blockquote-footer color-white font-12">Author Name <cite title="Source Title">Source Title</cite></footer> -->
+    </div>
+  </div>
+  <div class="layer-stretch " style="max-width: 50%;background: linear-gradient(-90deg, rgb(216 255 0 / 75%), rgb(218 151 29 / 75%)); margin: auto;padding: 60px;
+  border-radius: 25px;">
+    <div class="layer-wrapper " style="padding-top: 0px">
+      <div class="layer-container row">
+        <!-- Start Login Section -->
+
+        <div id="login-page" class="layer-stretch" style="margin: auto;">
+
+          <div class="layer-wrapper">
+
+            <form id="form" style="text-align: center;" action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
+              {{ csrfField()}}
+              <div class="form-container">
+                
+                <div class="mb-3">
+                  <h3 style="color: white;">Import Excel</h3>
+                  <input class="form-control" type="file" id="formFile" name="file">
+                </div>
+
+                <div class="" style="margin-top: 15px;"> 
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect btn btn-warning" type="submit"
+                    > IMPORT DATA <span
+                      class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div><!-- End Login Section -->
+      </div>
+    </div>
+  </div><!-- End About First Page  -->
+  <!-- ============== END PANGGIL KONTEN ========== -->
+
+
+  <!--   ============== PANGGIL KONTEN ============ -->
+
+  <!-- Start Emergency Section -->
+  <div id="emergency" style="text-align: -webkit-center;margin-top: 35px;">
+    <div class="layer-stretch">
+      <div class="layer-wrapper">
+        <div class="layer-ttl">
+          <h3>Saat Gawat Darurat</h3>
+        </div>
+        <div class="layer-container">
+          <div class="paragraph-medium paragraph-black">
+            Kami Puskesmas Kecamatan Jarinegara Siap Melayani Dengan Sepenuh Hati, Jika Anda Dalam Situasi Gawat Darurat
+            Segera Langsung
+          </div>
+          <div class="emergency-number">Hubungi : <a href="tel:+62813-1172-5278">081311725278</a></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Emergency Section -->
+
+
+  <!--  Start main Footer Section -->
+  <!-- <footer id="footer">
+    <div class="layer-stretch">
+      <div class="row layer-wrapper">
+        <div class="col-md-3 footer-block">
+          <div class="footer-ttl">
+            <p>Kontak Kami</p>
+          </div>
+          <div class="footer-container footer-a">
+            <div class="tbl">
+              <div class="tbl-row" style="border-bottom: none">
+                <div class="tbl-cell"><i class="fa fa-map-marker" style="font-size: 24px"></i></div>
+                <div class="tbl-cell">
+                  <p class="paragraph-medium paragraph-white" style="font-size: 12px">
+                    Jalan Halimun Nomor 13 <br>RT.07 RW.02 Kelurahan Guntur <br>
+                    Kecamatan Setiabudi <br>
+                    Jakarta Selatan
+                  </p>
+                </div>
+              </div>
+              <div class="tbl-row">
+                <div class="tbl-cell"><i class="fa fa-phone" style="font-size: 24px"></i></div>
+                <div class="tbl-cell">
+                  <a href="tel:+6221-829-5529" style="font-size: 12px">
+                    +6221-829-5529
+                  </a>
+                </div>
+              </div>
+              <div class="tbl-row">
+                <div class="tbl-cell"><i class="fa fa-envelope" style="font-size: 24px"></i></div>
+                <div class="tbl-cell">
+                  <p class="paragraph-medium paragraph-white" style="font-size: 12px">cso.pkc.setiabudi@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 footer-block">
+          <div class="footer-ttl">
+            <p>Quick Menu</p>
+          </div>
+          <div class="footer-container footer-b">
+            <div class="tbl">
+              <div class="tbl-row">
+                <ul class="tbl-cell">
+                  <li><a href="https://cekhasilswab.puskesmassetiabudi.id/#">Layanan 24 Jam</a></li>
+                  <li><a href="https://cekhasilswab.puskesmassetiabudi.id/#">Profil Puskesmas</a></li>
+                  <li><a href="https://cekhasilswab.puskesmassetiabudi.id/#">Kontak Kami</a></li>
+                  <li><a href="https://cekhasilswab.puskesmassetiabudi.id/#">Visi &amp; Misi</a></li>
+
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 footer-block">
+          <div class="footer-ttl">
+            <p>Media Sosial</p>
+          </div>
+          <div class="footer-container footer-c">
+
+            <div class="footer-subscribe">
+              <div class="social-login">
+                <a href="https://www.facebook.com/puskesmaskecamatansetiabudi" class="social-facebook"
+                  style="width: 100%"><i style="margin-left: 10px" class="fa fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/puskessetiabudi" class="social-facebook"
+                  style="width: 100%;background-color: #55ACEE"><i style="margin-left: 10px;color: #55ACEE"
+                    class="fa fa-twitter"></i>Twitter</a>
+                <a href="https://www.instagram.com/puskesmassetiabudi" class="social-facebook"
+                  style="width: 100%;background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)"><i
+                    style="margin-left: 10px; color: #ED8437" class="fa fa-instagram"></i>Instagram</a>
+                <a href="https://www.youtube.com/PuskesmasKecamatanSetiabudi" class="social-facebook"
+                  style="width: 100%;background-color: #E42B26"><i style="margin-left: 10px; color: #E42B26"
+                    class="fa fa-youtube"></i>Youtube</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 footer-block">
+          <div class="footer-ttl">
+            <p> Jam Buka</p>
+          </div>
+          <div class="footer-container footer-c">
+            <div class="tbl">
+              <div class="tbl-row" style="border-bottom: none">
+
+                <div class="tbl-cell">
+                  <p class="paragraph-medium paragraph-white"><i class="fa fa-clock-o"></i>
+                    Kami Buka 24 Jam
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>-->
+  <!-- End main Footer Section -->
+  <!-- Start Copyright Section -->
+  <!--  <div id="copyright">
+    <div class="layer-stretch">
+      <div class="paragraph-medium paragraph-white">2021 © Puskesmas Kecamatan Setiabudi ALL RIGHTS RESERVED.</div>
+    </div>
+  </div>
+</footer> -->
+  <!-- End of Copyright Section -->
+  <!-- End of Footer Section -->
+  <!-- ============== END PANGGIL KONTEN ========== -->
+
+  <!-- **********Included Scripts*********** -->
+
+  <!-- Jquery Library 2.1 JavaScript-->
+  <!-- <script async="" src="/analytics.js.download"></script> -->
+  <!-- <script src="/jquery-2.1.4.min.js.download"></script> -->
+  <!-- Popper JavaScript-->
+  <!-- <script src="/popper.min.js.download"></script> -->
+  <!-- Bootstrap Core JavaScript-->
+  <!-- <script src="/bootstrap.min.js.download"></script> -->
+  <!-- Material Design Lite JavaScript-->
+  <!-- <script src="/material.min.js.download"></script> -->
+  <!-- Material Select Field Script -->
+  <!-- <script src="/mdl-selectfield.min.js.download"></script> -->
+  <!-- Flexslider Plugin JavaScript-->
+  <!-- <script src="/jquery.flexslider.min.js.download"></script> -->
+  <!-- Owl Carousel Plugin JavaScript-->
+  <!-- <script src="/owl.carousel.min.js.download"></script> -->
+  <!-- Scrolltofixed Plugin JavaScript-->
+  <!-- <script src="/jquery-scrolltofixed.min.js.download"></script> -->
+  <!-- Magnific Popup Plugin JavaScript-->
+  <!-- <script src="/jquery.magnific-popup.min.js.download"></script> -->
+  <!-- WayPoint Plugin JavaScript-->
+  <!-- <script src="/jquery.waypoints.min.js.download"></script> -->
+  <!-- CounterUp Plugin JavaScript-->
+  <!-- <script src="/jquery.counterup.js.download"></script> -->
+  <!-- SmoothScroll Plugin JavaScript-->
+  <!-- <script src="/smoothscroll.min.js.download"></script> -->
+  <!--Custom JavaScript for Klinik Template-->
+  <!-- <script src="/custom.js.download"></script>
+  <script src="/sweetalert.min.js.download"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+  <!-- <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-93901876-1', 'auto');
+    ga('send', 'pageview');
+
+    $('inputNIK').on('keypress', function (event) {
+      var regex = new RegExp("^[a-zA-Z0-9]+$");
+      var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+      if (!regex.test(key)) {
+        event.preventDefault();
+        return false;
+      }
+    });
+
+    function AvoidSpace(event) {
+      var k = event ? event.which : window.event.keyCode;
+      if (k == 32) return false;
+
+
+    }
+
+
+
+   
+  </script> -->
+
+  <div id="shimai-world"
+    style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483647; pointer-events: none; background: transparent;">
+  </div>
+  <div style="clear: both;"></div>
+</body>
+
+</html>
